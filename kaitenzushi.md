@@ -1,7 +1,7 @@
 # Kaitenzushi
 
 There are `N` dishes in a row on a kaiten belt, with the 
-ith dish being of type D_i. Some dishes may be of the same type as one another.
+ith dish being of type `D<sub>i</sub>`. Some dishes may be of the same type as one another.
 You're very hungry, but you'd also like to keep things interesting. The `N` dishes will arrive in front of you, one after 
 another in order, and for each one you'll eat it as long as it isn't the same type as any of the previous 
 `K` dishes you've eaten. You eat very fast, so you can consume a dish before the next one gets to you. 
@@ -15,25 +15,25 @@ Please take care to write a solution which runs within the time limit.
 
 1 ≤ N ≤ 500,000
 1 ≤ K ≤ N
-1 ≤ D_i ≤1,000,000
+1 ≤ D<sub>i</sub> ≤1,000,000
 
 ## Sample test case #1
 N = 6
 D = [1, 2, 3, 3, 2, 1]
 K = 1
-Expected Return Value = 5
+`Expected Return Value = 5`
 
 ## Sample test case #2
 N = 6
 D = [1, 2, 3, 3, 2, 1]
 K = 2
-Expected Return Value = 4
+`Expected Return Value = 4`
 
 ## Sample test case #3
 N = 7
 D = [1, 2, 1, 2, 1, 2, 1]
 K = 2
-Expected Return Value = 2
+`Expected Return Value = 2`
 
 
 ## Sample Explanation
