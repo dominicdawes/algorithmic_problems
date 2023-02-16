@@ -1,9 +1,11 @@
-Solves all test cases. O(N) Sliding Window and Prefix Sum.
+# Solves all test cases. O(N) Sliding Window and Prefix Sum.
+# https://leetcode.com/discuss/interview-question/1641064/facebook-director-of-photography-puzzle-overflow
 
-1. calculate the prefixSums of P and B so you could quickly lookup the count for a given window
-2. For every A in position i, 
-  ans += (number of Ps to the left that is within the [i-X,i-Y] window) * (number of Bs to the right that is within the [i+X,i+Y] window) 
-  ans += (number of Bs to the left that is within the [i-X,i-Y] window) * (number of Ps to the right that is within the [i+X,i+Y] window) 
+# 1. calculate the prefixSums of P and B so you could quickly lookup the count for a given window
+# 2. For every A in position i, 
+#   ans += (number of Ps to the left that is within the [i-X,i-Y] window) * (number of Bs to the right that is within the [i+X,i+Y] window) 
+#   ans += (number of Bs to the left that is within the [i-X,i-Y] window) * (number of Ps to the right that is within the [i+X,i+Y] window) 
+
 def getArtisticPhotographCount(N: int, C: str, X: int, Y: int) -> int:
   # Prefix 
   prefixPSum = [0]
